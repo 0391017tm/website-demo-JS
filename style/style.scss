@@ -1,0 +1,169 @@
+// 初期化。これはもう王道だで覚えろ
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  // 背景をオシャンティーにしてるCSS
+  background: linear-gradient(to right, rgb(147, 2, 160), rgb(235, 19, 19));
+  // 上下のダサい余白を消してくれてる
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  align-items: center;
+  font-weight: 550;
+  position: sticky;
+  z-index: 1;
+
+  // かなり特殊な右寄せ。これは覚えるべきCSS
+  .nav-links {
+    flex: 1;
+    text-align: right;
+
+    li {
+      // リストの邪魔な点々を消してくれてる
+      list-style: none;
+      // Flex以外での横並び方法。ブロックをインライン要素に直すことで横並びにする
+      display: inline-block;
+      padding: 0 2rem;
+    }
+
+    a {
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  .logo-area {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 20%;
+      height: 20%;
+      margin-right: 12px;
+    }
+  }
+}
+
+.infomation {
+  width: 1000px;
+  height: 1000px;
+
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: translateY(-50%);
+
+  .pc {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 27%;
+    z-index: 1;
+  }
+  #circle {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    // 正円を50%にすることで作れる
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 1s;
+
+    .feature {
+      position: absolute;
+      color: white;
+
+      img {
+        width: 70px;
+      }
+
+      div {
+        margin-left: 20px;
+
+        h1 {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .one {
+      display: flex;
+      top: 450px;
+      right: 70px;
+    }
+
+    .two {
+      display: flex;
+      top: 100px;
+      left: 340px;
+      transform: rotate(-90deg);
+    }
+
+    .three {
+      display: flex;
+      bottom: 450px;
+      left: 50px;
+      transform: rotate(180deg);
+    }
+
+    .four {
+      display: flex;
+      bottom: 150px;
+      right: 370px;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 520 solid white;
+  border-right: 520 solid transparent;
+  border-bottom: 520 solid white;
+  border-left: 520 solid white;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+
+  img {
+    width: 15%;
+  }
+
+  #upBtn {
+    cursor: pointer;
+  }
+
+  #downBtn {
+    cursor: pointer;
+    transform: rotate(-180deg);
+  }
+}

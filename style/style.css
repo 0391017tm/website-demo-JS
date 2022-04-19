@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#9302a0), to(#eb1313));
+  background: linear-gradient(to right, #9302a0, #eb1313);
+  overflow: hidden;
+  position: relative;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 550;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+}
+
+nav .nav-links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+nav .nav-links li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+nav .nav-links a {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .nav-links a:hover {
+  color: black;
+}
+
+nav .logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo-area img {
+  width: 20%;
+  height: 20%;
+  margin-right: 12px;
+}
+
+.infomation {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.infomation .pc {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 27%;
+  z-index: 1;
+}
+
+.infomation #circle {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.infomation #circle .feature {
+  position: absolute;
+  color: white;
+}
+
+.infomation #circle .feature img {
+  width: 70px;
+}
+
+.infomation #circle .feature div {
+  margin-left: 20px;
+}
+
+.infomation #circle .feature div h1 {
+  margin-top: 8px;
+}
+
+.infomation #circle .one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 450px;
+  right: 70px;
+}
+
+.infomation #circle .two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 100px;
+  left: 340px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.infomation #circle .three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 450px;
+  left: 50px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.infomation #circle .four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 150px;
+  right: 370px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 520 solid white;
+  border-right: 520 solid transparent;
+  border-bottom: 520 solid white;
+  border-left: 520 solid white;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+
+.control img {
+  width: 15%;
+}
+
+.control #upBtn {
+  cursor: pointer;
+}
+
+.control #downBtn {
+  cursor: pointer;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+/*# sourceMappingURL=style.css.map */
